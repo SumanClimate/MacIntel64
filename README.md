@@ -23,3 +23,11 @@ export INSTALLDIR=your installation directory
    ./configure --prefix=$INSTALLDIR --with-zlib=$INSTALLDIR --with-szlib=$INSTALLDIR\
    make\
    make install
+4. netcdf-c-4.5.0\
+   export CPPFLAGS=-I$INSTALLDIR/include\
+   export LDFLAGS=-L$INSTALLDIR/lib\
+   tar -zxvf netcdf-c-4.5.0.tar\
+   cd netcdf-c-4.5.0\
+   ./configure --prefix=$INSTALLDIR\
+   make\
+   make install
