@@ -17,3 +17,9 @@ export INSTALLDIR=your installation directory
    ./configure --prefix=$INSTALLDIR\
    make\
    make install
+3. hdf5-1.10.7\
+   tar -zxvf hdf5-1.10.7.tar\
+   cd hdf5-1.10.7\
+   ./configure --prefix=$INSTALLDIR --with-zlib=$INSTALLDIR --with-szlib=$INSTALLDIR\
+   make\
+   make install
