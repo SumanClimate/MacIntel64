@@ -14,38 +14,38 @@ export INSTALLDIR=your installation directory
 ## 2. szip-2.1.1
    tar -zxvf szip-2.1.1.tar\
    cd szip-2.1.1\
-   ./configure --prefix=$INSTALLDIR\
+   ./configure --prefix=${INSTALLDIR}\
    make\
    make install
 ## 3. hdf5-1.10.7
    tar -zxvf hdf5-1.10.7.tar\
    cd hdf5-1.10.7\
-   ./configure --prefix=$INSTALLDIR --with-zlib=$INSTALLDIR --with-szlib=$INSTALLDIR\
+   ./configure --prefix=${INSTALLDIR} --with-zlib=${INSTALLDIR} --with-szlib=${INSTALLDIR}\
    make\
    make install
 ## 4. netcdf-c-4.5.0
-   export CPPFLAGS=-I$INSTALLDIR/include\
-   export LDFLAGS=-L$INSTALLDIR/lib\
+   export CPPFLAGS=-I${INSTALLDIR}/include\
+   export LDFLAGS=-L${INSTALLDIR}/lib\
    tar -zxvf netcdf-c-4.5.0.tar\
    cd netcdf-c-4.5.0\
-   ./configure --prefix=$INSTALLDIR\
+   ./configure --prefix=${INSTALLDIR}\
    make\
    make install
 ## 5. udunits-2.1.2
 Firstly, close all terminal and then put\
-export PATH=$INSTALLDIR/bin:$PATH\
+export PATH=${INSTALLDIR}/bin:$PATH\
 export CC=gcc FC=gfortran F77=gfortran F90=gfortran CXX=g++\
 in the ~/.bashrc file.\
 Generally Mac consider .bash_profile by default and so you might not have .bashrc. If it doesn't exist create it. Dont forget to put source ~/.bashrc in .bash_profile. Then .bashrc will run. Now open a terminal and do the next step.\
    export CFLAGS="-Wno-implicit-function-declaration"\
    tar -zxvf udunits-2.1.2.tar\
    cd udunits-2.1.2\
-   ./configure --prefix=$INSTALLDIR\
+   ./configure --prefix=${INSTALLDIR}\
    make\
    make install
 ## 6. netcdf-fortran-4.5.1
-   export CPPFLAGS=-I$INSTALLDIR/include\
-   export LDFLAGS=-L$INSTALLDIR/lib\
+   export CPPFLAGS=-I${INSTALLDIR}/include\
+   export LDFLAGS=-L${INSTALLDIR}/lib\
    export CFLAGS="-Wno-implicit-function-declaration"\
    export FFLAGS="-fallow-argument-mismatch"\
    export FCFLAGS="-fallow-argument-mismatch"\
