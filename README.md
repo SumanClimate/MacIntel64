@@ -11,19 +11,19 @@ export INSTALLDIR=your installation directory
    ./configure --prefix=$INSTALLDIR\
    make\
    make install
-2. szip-2.1.1\
+## 2. szip-2.1.1
    tar -zxvf szip-2.1.1.tar\
    cd szip-2.1.1\
    ./configure --prefix=$INSTALLDIR\
    make\
    make install
-3. hdf5-1.10.7\
+## 3. hdf5-1.10.7
    tar -zxvf hdf5-1.10.7.tar\
    cd hdf5-1.10.7\
    ./configure --prefix=$INSTALLDIR --with-zlib=$INSTALLDIR --with-szlib=$INSTALLDIR\
    make\
    make install
-4. netcdf-c-4.5.0\
+## 4. netcdf-c-4.5.0
    export CPPFLAGS=-I$INSTALLDIR/include\
    export LDFLAGS=-L$INSTALLDIR/lib\
    tar -zxvf netcdf-c-4.5.0.tar\
