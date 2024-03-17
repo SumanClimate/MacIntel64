@@ -5,9 +5,15 @@ conflicts/issues happened. But installing those packages from their individual t
 It is assumed that the system has gcc, gfortran and g++ installed.\
 export CC=gcc FC=gfortran F77=gfortran F90=gfortran CXX=g++\
 export INSTALLDIR=your installation directory
-1. zlib-1.2.11.\
+1. zlib-1.2.11\
    tar -zxvf zlib-1.2.11.tar\
    cd zlib-1.2.11\
    ./configure --prefix=$INSTALLDIR\
    make\
-   make install\
+   make install
+2. szip-2.1.1\
+   tar -zxvf szip-2.1.1.tar\
+   cd szip-2.1.1\
+   ./configure --prefix=$INSTALLDIR\
+   make\
+   make install
