@@ -8,7 +8,7 @@ export INSTALLDIR=your installation directory
 ## 1. zlib-1.2.11
    tar -zxvf zlib-1.2.11.tar\
    cd zlib-1.2.11\
-   ./configure --prefix=$INSTALLDIR\
+   ./configure --prefix=${INSTALLDIR}\
    make\
    make install
 ## 2. szip-2.1.1
