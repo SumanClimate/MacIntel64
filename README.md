@@ -32,8 +32,8 @@ export INSTALLDIR=your installation directory
    make\
    make install
 ## 5. udunits-2.1.2
-Firstly, close all terminal and put export PATH=$INSTALLDIR/bin:$PATH in the .bashrc file. Generally Mac consider .bash_profile so you might not have .bashrc. It it doesn't exist\
-create one. Put source ~/.bashrc .bash_profile. Then .bashrc will run. Now open a terminal and do the next step.\
+Firstly, close all terminal and put export PATH=$INSTALLDIR/bin:$PATH in the .bashrc file. Generally Mac consider .bash_profile so you might not have .bashrc. If it doesn't exist 
+create it. Dont forget to put source ~/.bashrc in .bash_profile. Then .bashrc will run. Now open a terminal and do the next step.\
    export CFLAGS="-Wno-implicit-function-declaration"\
    tar -zxvf udunits-2.1.2.tar\
    cd udunits-2.1.2\
