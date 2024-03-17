@@ -32,11 +32,20 @@ export INSTALLDIR=your installation directory
    make\
    make install
 ## 5. udunits-2.1.2
-Firstly, close all terminal and put export PATH=$INSTALLDIR/bin:$PATH in the .bashrc file. Generally Mac consider .bash_profile so you might not have .bashrc. If it doesn't exist 
-create it. Dont forget to put source ~/.bashrc in .bash_profile. Then .bashrc will run. Now open a terminal and do the next step.\
+Firstly, close all terminal and then put\
+export PATH=$INSTALLDIR/bin:$PATH\
+export CC=gcc FC=gfortran F77=gfortran F90=gfortran CXX=g++\
+in the ~/.bashrc file.\
+Generally Mac consider .bash_profile by default and so you might not have .bashrc. If it doesn't exist create it. Dont forget to put source ~/.bashrc in .bash_profile. Then .bashrc will run. Now open a terminal and do the next step.\
    export CFLAGS="-Wno-implicit-function-declaration"\
    tar -zxvf udunits-2.1.2.tar\
    cd udunits-2.1.2\
    ./configure --prefix=$INSTALLDIR\
    make\
    make install
+## 6. netcdf-fortran-4.5.1
+   export CPPFLAGS=-I$INSTALLDIR/include\
+   export LDFLAGS=-L$INSTALLDIR/lib\
+   export CFLAGS="-Wno-implicit-function-declaration"\
+   export FFLAGS="-fallow-argument-mismatch"\
+   export FCFLAGS="-fallow-argument-mismatch"\
