@@ -1,4 +1,4 @@
-These are basic software needed for any mateorological studies and research. How these software can be installed on a Mac system with intel64 achitecture are described here. 
+zlib, szip, hdf5, netcdf and udunits are basic software needed for any mateorological studies and research. How these software can be installed on a Mac system with intel64 achitecture are described here. 
 Although, it can be installed on other online repositories but sometimes it is extremely dangerous while used to compile to other packages using those. Various library 
 conflicts/issues happened. But installing those packages from their individual tarball package reduces chances of those conflicts.
 ## INSTALLATION ##
