@@ -58,3 +58,4 @@ Generally Mac consider .bash_profile by default and so you might not have .bashr
 A simple c/fortran reading/writing code (https://www.unidata.ucar.edu/software/netcdf/examples/programs/) also be a a good check. While compile these code, netcdf library should be linked as below:\
 gfortran simple_xy_wr.f90 -I${INSTALLDIR}/include -L${INSTALLDIR}/lib -lnetdff -lnetcdf\
 gcc simple_xy_wr.c -I${INSTALLDIR}/include -L${INSTALLDIR}/lib -lnetcdf
+## NOTE: installtion of these software on new ARM64 system (M1/M2 chip) system is same as decribed here ##
